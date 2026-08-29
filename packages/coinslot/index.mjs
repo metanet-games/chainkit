@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: Apache-2.0
 // coinslot — a drop-in micropayment paywall + tip rail for games. The chain as the coin slot.
 //
 // Define priced products (a continue, a day pass, an unlock, a tip), then `buy()` / `require()`

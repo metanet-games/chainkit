@@ -34,4 +34,4 @@ migration record; where the saves live is up to you.
 See [SPEC.md](./SPEC.md) for the identity model, deterministic display derivation, and the
 challenge/verify format.
 
-MIT © metanet.games
+Apache-2.0 © metanet.games

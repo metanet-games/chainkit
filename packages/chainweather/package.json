@@ -23,5 +23,5 @@
     "@metanet-games/chainseed": "^0.1.0",
     "@metanet-games/chainclock": "^0.1.0"
   },
-  "license": "MIT"
+  "license": "Apache-2.0"
 }

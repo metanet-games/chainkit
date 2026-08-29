@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: Apache-2.0
 // chainseed — verifiable deterministic randomness from a Bitcoin (BSV) block hash.
 //
 // The block hash is a PUBLIC, un-riggable random beacon: nobody chooses it, everybody can

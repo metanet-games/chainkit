@@ -68,3 +68,9 @@ fairdrop adds only *commitment* and *weighting*; every random bit comes from cha
 pre-mixes multi-source entropy into a single beacon string (SHA256 of blockHash + reveals) and
 hands that to `chainseed.seed()`, which is why chainseed keeps a single-string beacon and only
 uniform draws — weighting and entropy-mixing are the consumer's job, not the primitive's.
+
+## License & implementation
+
+This specification is free for anyone to implement, in any language, royalty-free — writing it
+down is the point. The reference implementation is licensed under Apache-2.0; the specification
+itself places no restriction on independent, clean-room implementations.

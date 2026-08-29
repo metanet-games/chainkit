@@ -53,3 +53,9 @@ dependencies. Pairs with `@metanet-games/passport` (entitlements key on `identit
 Not a wallet or payment processor (that's the adapter), not on-chain settlement or escrow, not a
 refund system, not a server-authoritative ledger. It's the client-side paywall state machine; for
 tamper-evident sales, anchor `receipt.txid` yourself (e.g. via bsv.cx).
+
+## License & implementation
+
+This specification is free for anyone to implement, in any language, royalty-free — writing it
+down is the point. The reference implementation is licensed under Apache-2.0; the specification
+itself places no restriction on independent, clean-room implementations.

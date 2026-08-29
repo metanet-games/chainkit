@@ -52,3 +52,9 @@ local wall-clock via `progress()` and is for animation only — never gate a gam
 
 Not a physical weather simulation, not a forecast, not a map/region system — it emits a weather
 state for a (hash, height, region) key and leaves geography and rendering to your game.
+
+## License & implementation
+
+This specification is free for anyone to implement, in any language, royalty-free — writing it
+down is the point. The reference implementation is licensed under Apache-2.0; the specification
+itself places no restriction on independent, clean-room implementations.

@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: Apache-2.0
 // chainclock — a block-driven world tick: one shared clock nobody controls.
 //
 // The BSV chain is a monotonic heartbeat — a new block roughly every ten minutes, each with a

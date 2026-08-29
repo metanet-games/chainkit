@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: Apache-2.0
 // fairdrop — provably-fair random outcomes bound to a FUTURE Bitcoin (BSV) block.
 //
 // Use it for loot, dice, crates, matchmaking seeds — any outcome where a player must be able

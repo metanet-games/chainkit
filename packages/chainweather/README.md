@@ -43,4 +43,4 @@ advisory (local wall-clock) — never gate a game outcome on it, gate on `curren
 
 See [SPEC.md](./SPEC.md).
 
-MIT © metanet.games
+Apache-2.0 © metanet.games

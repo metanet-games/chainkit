@@ -51,4 +51,4 @@ you can anchor/verify it on-chain (e.g. via bsv.cx) if you want tamper-evident s
 
 See [SPEC.md](./SPEC.md).
 
-MIT © metanet.games
+Apache-2.0 © metanet.games

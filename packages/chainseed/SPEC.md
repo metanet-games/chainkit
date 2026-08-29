@@ -87,3 +87,9 @@ who picks the height controls the result.
 Not a CSPRNG for keys/secrets — the beacon is public, so outputs are public and predictable
 to anyone who knows the (beacon, path). It's a *shared, auditable* RNG, which is the opposite
 of a secret one. Don't derive wallet material from it.
+
+## License & implementation
+
+This specification is free for anyone to implement, in any language, royalty-free — writing it
+down is the point. The reference implementation is licensed under Apache-2.0; the specification
+itself places no restriction on independent, clean-room implementations.

@@ -70,3 +70,9 @@ browser; the default is an in-memory shim (fine for tests/SSR, not persistent).
 
 Not an auth server, not custody, not a profile database, and it does not store game state. It is
 the identity layer; persistence, sessions, and authorization are the app's.
+
+## License & implementation
+
+This specification is free for anyone to implement, in any language, royalty-free — writing it
+down is the point. The reference implementation is licensed under Apache-2.0; the specification
+itself places no restriction on independent, clean-room implementations.

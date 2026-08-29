@@ -25,4 +25,4 @@ Don't derive keys or secrets from it.
 
 See [SPEC.md](./SPEC.md) for the language-agnostic derivation and conformance test vectors.
 
-MIT © metanet.games
+Apache-2.0 © metanet.games

@@ -52,3 +52,9 @@ source's job.
 
 Not a block source (you feed it), not a scheduler/timer, not wall-clock time. It converts a stream
 of chain tips into a shared game clock and leaves fetching, animation loops, and persistence to you.
+
+## License & implementation
+
+This specification is free for anyone to implement, in any language, royalty-free — writing it
+down is the point. The reference implementation is licensed under Apache-2.0; the specification
+itself places no restriction on independent, clean-room implementations.

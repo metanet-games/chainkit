@@ -48,4 +48,12 @@ npm test        # runs the fairdrop proof suite
 
 ## License
 
-MIT © metanet.games
+Code is licensed under **Apache-2.0** (see [LICENSE](./LICENSE) and [NOTICE](./NOTICE)) — permissive,
+with an explicit patent grant.
+
+The **specifications** (each package's `SPEC.md`) are published **free for anyone to implement, in
+any language, royalty-free**. Apache-2.0 covers the reference implementations here; it places no
+restriction on independent, clean-room implementations of the specs themselves. The whole point is
+that these become primitives anyone can reimplement and verify against.
+
+Apache-2.0 © 2026 metanet.games

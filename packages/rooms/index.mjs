@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: Apache-2.0
 // rooms — client-side chat with DYNAMIC channels + presence, over any transport.
 //
 // You bring a transport (WebSocket, the REORG-style append-only HTTP relay, WebRTC, or the

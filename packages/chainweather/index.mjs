@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: Apache-2.0
 // chainweather — deterministic, shared weather from the chain. No weather server.
 //
 // Every player sees the same storm roll in, because weather is a pure function of the block hash

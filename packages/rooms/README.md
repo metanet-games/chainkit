@@ -48,4 +48,4 @@ needs no server**. `loopback()` is an in-memory hub for tests and local multipla
 
 See [SPEC.md](./SPEC.md) for the envelope format and the presence model.
 
-MIT © metanet.games
+Apache-2.0 © metanet.games

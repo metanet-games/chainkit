@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: Apache-2.0
 // chainscape — turn placed BSV blocks into a contiguous 2-D biome map.
 //
 // Given blocks laid on a grid (each a {gx,gy,height,hash}), chainscape generates a seamless

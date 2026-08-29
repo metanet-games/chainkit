@@ -1,0 +1,11 @@
+chainkit
+Copyright 2026 metanet.games
+
+This product includes software developed at metanet.games.
+
+Licensed under the Apache License, Version 2.0. See LICENSE.
+
+The specifications in this repository (each package's SPEC.md) are published free for
+anyone to implement, in any language, royalty-free. The Apache-2.0 license covers the
+reference implementation; it places no restriction on independent, clean-room
+implementations of the specifications themselves.

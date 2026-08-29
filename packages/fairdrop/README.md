@@ -34,4 +34,4 @@ publishes `hash(seed)` at commit and reveals it at resolve.
 resolving block, defused by economics + committed seeds, and fairness depends on the commitment
 being provably older than the block (anchor its digest — e.g. via bsv.cx's notary).
 
-MIT © metanet.games
+Apache-2.0 © metanet.games

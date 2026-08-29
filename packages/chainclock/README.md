@@ -40,4 +40,4 @@ spawns, drops) that every player sees identically. That combination is what `cha
 
 See [SPEC.md](./SPEC.md) for the tick/reorg model and helpers.
 
-MIT © metanet.games
+Apache-2.0 © metanet.games

@@ -64,3 +64,9 @@ the "stable outward growth" property.
 
 Not a physics/heightmap engine and not gameplay — chainscape emits a biome index grid. What
 those biomes *mean* (walkable, minable, spawns) is the game's job (blockland's).
+
+## License & implementation
+
+This specification is free for anyone to implement, in any language, royalty-free — writing it
+down is the point. The reference implementation is licensed under Apache-2.0; the specification
+itself places no restriction on independent, clean-room implementations.

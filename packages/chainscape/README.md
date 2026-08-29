@@ -27,4 +27,4 @@ Emits a biome-index grid; what the biomes *mean* (walkable, minable, spawns) is 
 See [SPEC.md](./SPEC.md) for the model, the seam-stability guarantee, and the floating-point
 determinism caveat for cross-language ports.
 
-MIT © metanet.games
+Apache-2.0 © metanet.games

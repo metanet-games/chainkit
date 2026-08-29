@@ -62,3 +62,9 @@ stable name + identicon. Equality and presence key on `id`.
 
 Not a transport, not a message store/history, not moderation, not access control. It's the
 channel + presence + de-dup layer between a transport and your UI.
+
+## License & implementation
+
+This specification is free for anyone to implement, in any language, royalty-free — writing it
+down is the point. The reference implementation is licensed under Apache-2.0; the specification
+itself places no restriction on independent, clean-room implementations.

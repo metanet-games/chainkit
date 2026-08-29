@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: Apache-2.0
 // passport — portable, wallet-optional player identity for BSV games.
 //
 // The idea: a player's identity is a KEY, not an account on our server. Anonymous by default
