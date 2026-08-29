@@ -1,0 +1,22 @@
+{
+  "name": "@metanet-games/chainseed",
+  "version": "0.1.0",
+  "description": "Verifiable deterministic randomness from a Bitcoin (BSV) block hash. Zero dependencies.",
+  "type": "module",
+  "main": "./index.mjs",
+  "exports": "./index.mjs",
+  "files": [
+    "index.mjs",
+    "SPEC.md"
+  ],
+  "keywords": [
+    "bsv",
+    "bitcoin",
+    "provably-fair",
+    "rng",
+    "deterministic",
+    "verifiable",
+    "gamedev"
+  ],
+  "license": "MIT"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "chainkit",
+  "private": true,
+  "type": "module",
+  "description": "A directory of small, verifiable, chain-native building blocks for game devs. Pick and choose.",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "test": "node packages/fairdrop/test.mjs"
+  },
+  "license": "MIT"
+}

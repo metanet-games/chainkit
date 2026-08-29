@@ -1,0 +1,24 @@
+{
+  "name": "@metanet-games/chainscape",
+  "version": "0.1.0",
+  "description": "Turn placed BSV blocks into a contiguous, deterministic 2-D biome map.",
+  "type": "module",
+  "main": "./index.mjs",
+  "exports": "./index.mjs",
+  "files": [
+    "index.mjs",
+    "SPEC.md"
+  ],
+  "keywords": [
+    "bsv",
+    "bitcoin",
+    "procedural-generation",
+    "terrain",
+    "deterministic",
+    "gamedev"
+  ],
+  "dependencies": {
+    "@metanet-games/chainseed": "^0.1.0"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,28 @@
+{
+  "name": "@metanet-games/fairdrop",
+  "version": "0.1.0",
+  "description": "Provably-fair random outcomes bound to a future Bitcoin (BSV) block.",
+  "type": "module",
+  "main": "./index.mjs",
+  "exports": "./index.mjs",
+  "files": [
+    "index.mjs",
+    "SPEC.md"
+  ],
+  "scripts": {
+    "test": "node test.mjs"
+  },
+  "keywords": [
+    "bsv",
+    "bitcoin",
+    "provably-fair",
+    "loot",
+    "rng",
+    "commit-reveal",
+    "gamedev"
+  ],
+  "dependencies": {
+    "@metanet-games/chainseed": "^0.1.0"
+  },
+  "license": "MIT"
+}
