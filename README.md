@@ -19,6 +19,8 @@ Pick and choose. You don't take the kit; you take the pieces you need.
 | [`@metanet-games/chainclock`](packages/chainclock) | A block-driven world tick — one shared, verifiable clock nobody controls; derive day/night, seasons and rounds from block height. | — |
 | [`@metanet-games/chainweather`](packages/chainweather) | Deterministic, shared weather from the chain — the same storm for every player, un-riggable, no weather server. | chainseed, chainclock |
 | [`@metanet-games/coinslot`](packages/coinslot) | Drop-in micropayment paywall + tip rail — priced products, entitlements (durable / N-uses / timed) and receipts, over a pluggable wallet adapter. | — |
+| [`@metanet-games/highscore`](packages/highscore) | Leaderboards you can trust — ranked, best-per-player boards over any backend, with a verifier seam for un-forgeable scores. | passport |
+| [`@metanet-games/satchel`](packages/satchel) | Inventory — local for a wallet-less player, real on-chain items (1Sat Ordinals) when they connect, in one merged bag. | — |
 
 ## Design rules
 

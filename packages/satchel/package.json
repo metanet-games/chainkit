@@ -1,0 +1,24 @@
+{
+  "name": "@metanet-games/satchel",
+  "version": "0.1.0",
+  "description": "Inventory for BSV games — local for a wallet-less player, real on-chain items (1Sat Ordinals) when they connect, in one merged bag. Zero deps.",
+  "type": "module",
+  "main": "./index.mjs",
+  "exports": "./index.mjs",
+  "files": [
+    "index.mjs",
+    "SPEC.md"
+  ],
+  "scripts": {
+    "test": "node test.mjs"
+  },
+  "keywords": [
+    "bsv",
+    "inventory",
+    "ordinals",
+    "1sat",
+    "items",
+    "gamedev"
+  ],
+  "license": "Apache-2.0"
+}

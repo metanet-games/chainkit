@@ -1,0 +1,26 @@
+{
+  "name": "@metanet-games/highscore",
+  "version": "0.1.0",
+  "description": "Leaderboards you can trust — ranked, best-per-player boards over any backend, with a verifier seam for un-forgeable scores.",
+  "type": "module",
+  "main": "./index.mjs",
+  "exports": "./index.mjs",
+  "files": [
+    "index.mjs",
+    "SPEC.md"
+  ],
+  "scripts": {
+    "test": "node test.mjs"
+  },
+  "keywords": [
+    "bsv",
+    "leaderboard",
+    "highscore",
+    "anti-cheat",
+    "gamedev"
+  ],
+  "dependencies": {
+    "@metanet-games/passport": "^0.1.0"
+  },
+  "license": "Apache-2.0"
+}
