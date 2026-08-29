@@ -1,7 +1,7 @@
 # @metanet-games/highscore
 
 Leaderboards you can trust. Ranked, best-per-player boards over any backend, with a verifier seam
-for un-forgeable scores. Depends only on [passport](../passport) for display names.
+for un-forgeable scores. Depends only on [chaintag](../chaintag) for display names.
 
 ```js
 import { createHighscore } from "@metanet-games/highscore";
@@ -10,7 +10,7 @@ const hs = createHighscore({ store: localStorage });     // order:"desc" (higher
 const board = hs.board("arcade");                         // dynamic — name one, it exists
 
 board.on("update", (top10) => render(top10));
-board.submit({ player: myPassport, score: 4200 });        // keeps each player's best
+board.submit({ player: myChaintag, score: 4200 });        // keeps each player's best
 board.top(10);        // [{ rank, player:{id,name}, score, verified, ts }, …]
 board.rank(myId);     // this player's position
 

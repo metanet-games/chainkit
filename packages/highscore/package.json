@@ -20,7 +20,7 @@
     "gamedev"
   ],
   "dependencies": {
-    "@metanet-games/passport": "^0.1.0"
+    "@metanet-games/chaintag": "^0.1.0"
   },
   "license": "Apache-2.0"
 }

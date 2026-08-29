@@ -1,13 +1,13 @@
 # satchel — spec (v0.1)
 
 Local-first inventory that merges in on-chain items. Reference impl `index.mjs`, proof `test.mjs`.
-Zero dependencies. Pairs with `@metanet-games/passport` (the bag keys on `identity.id`).
+Zero dependencies. Pairs with `@metanet-games/chaintag` (the bag keys on `identity.id`).
 
 ## Setup
 
 `createSatchel({ identity, store?, chain?, now? })`:
 
-- `identity` — a passport identity (or any `{ id, pubkey? }`). Required. Items key on `id`;
+- `identity` — a chaintag identity (or any `{ id, pubkey? }`). Required. Items key on `id`;
   `pubkey` (if present) is passed to the chain adapter.
 - `store` — optional `{ getItem, setItem }` (e.g. `localStorage`) for persisting **local** items.
 - `chain` — optional `{ list(pubkey) → item[] }` adapter that returns the player's on-chain items.

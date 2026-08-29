@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: Apache-2.0
-// passport — portable, wallet-optional player identity for BSV games.
+// chaintag — portable, wallet-optional player identity for BSV games.
 //
 // The idea: a player's identity is a KEY, not an account on our server. Anonymous by default
 // (a locally-persisted random key, so a wallet-less player still has a stable identity across
@@ -8,7 +8,7 @@
 // portability a chain gives you that a per-game login never will.
 //
 // HARD RULE, baked in from experience: a wallet connection identifies a selected ACCOUNT, not a
-// user, and the first key you see is NOT consent. passport gives you the identity and the tools
+// user, and the first key you see is NOT consent. chaintag gives you the identity and the tools
 // to prove control of it; it never decides on your behalf that a connected key means the player
 // agreed to anything. That's the app's call. See SPEC.md.
 //
@@ -42,7 +42,7 @@ function identicon(h) {
 
 // Get-or-create a stable anonymous identity. `store` is any {getItem,setItem} (e.g. localStorage).
 export function anon(store = memStore) {
-  const KEY = "passport:anon";
+  const KEY = "chaintag:anon";
   let id = store.getItem(KEY);
   if (!id) { id = randomBytes(32).toString("hex"); store.setItem(KEY, id); }
   return { kind: "anon", id };
@@ -51,7 +51,7 @@ export function anon(store = memStore) {
 // Build an identity from wallet-provided fields. `pubkey` is the cryptographic anchor (required);
 // handle/avatar/paymail are optional display overrides the wallet may supply (e.g. HandCash).
 export function fromWallet({ pubkey, handle, avatar, paymail } = {}) {
-  if (!pubkey || typeof pubkey !== "string") throw new Error("passport.fromWallet: pubkey required");
+  if (!pubkey || typeof pubkey !== "string") throw new Error("chaintag.fromWallet: pubkey required");
   const id = pubkey.trim().toLowerCase();
   const p = { kind: "wallet", id, pubkey: id };
   if (handle) p.handle = handle;
@@ -78,7 +78,7 @@ export function shortId(p) {
 export function sameAccount(a, b) { return !!a && !!b && a.id === b.id; }
 
 // Migration record to carry an anonymous player's progress onto their wallet identity once they
-// connect. passport stores no game data — it hands you {fromId,toId} so the app moves the saves.
+// connect. chaintag stores no game data — it hands you {fromId,toId} so the app moves the saves.
 export function link(from, to) {
   return { fromId: from.id, fromKind: from.kind, toId: to.id, toKind: to.kind, at: new Date().toISOString() };
 }
@@ -87,7 +87,7 @@ export function link(from, to) {
 // a server). The app has the wallet sign this, then verifies the signature against p.pubkey with
 // @bsv/sdk (see SPEC.md). `nonce` should be a fresh random/opaque value per challenge.
 export function challenge(p, { purpose = "login", nonce = randomBytes(12).toString("hex") } = {}) {
-  return { message: `metanet.games passport\npurpose:${purpose}\nid:${p.id}\nnonce:${nonce}`, nonce, purpose, id: p.id };
+  return { message: `metanet.games chaintag\npurpose:${purpose}\nid:${p.id}\nnonce:${nonce}`, nonce, purpose, id: p.id };
 }
 
 export default { anon, fromWallet, profile, shortId, sameAccount, link, challenge };

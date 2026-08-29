@@ -12,7 +12,7 @@
 //   2. Once paid, ALWAYS grant. The worst failure is taking money and withholding what was bought,
 //      so the entitlement + receipt are recorded the moment the adapter reports success.
 //
-// Zero dependencies. Pairs with passport (pass a passport identity so entitlements follow the
+// Zero dependencies. Pairs with chaintag (pass a chaintag identity so entitlements follow the
 // player across sessions/devices).
 
 const now0 = () => Date.now();
@@ -29,7 +29,7 @@ const memStore = (() => { const m = new Map(); return { getItem: (k) => (m.has(k
 
 export function createCoinslot({ pay, identity, store = memStore, now = now0 } = {}) {
   if (typeof pay !== "function") throw new Error("coinslot: a `pay` adapter function is required");
-  if (!identity || !identity.id) throw new Error("coinslot: an identity with an id is required (pair with @metanet-games/passport)");
+  if (!identity || !identity.id) throw new Error("coinslot: an identity with an id is required (pair with @metanet-games/chaintag)");
 
   const KEY = "coinslot:" + identity.id;
   const products = new Map();

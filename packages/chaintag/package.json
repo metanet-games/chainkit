@@ -1,5 +1,5 @@
 {
-  "name": "@metanet-games/passport",
+  "name": "@metanet-games/chaintag",
   "version": "0.1.0",
   "description": "Portable, wallet-optional player identity for BSV games — anonymous by default, upgradeable to a real wallet key, with a deterministic name + identicon.",
   "type": "module",

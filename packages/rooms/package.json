@@ -1,7 +1,7 @@
 {
   "name": "@metanet-games/rooms",
   "version": "0.1.0",
-  "description": "Client-side chat with dynamic channels and presence, over any transport. Pairs with passport for identity.",
+  "description": "Client-side chat with dynamic channels and presence, over any transport. Pairs with chaintag for identity.",
   "type": "module",
   "main": "./index.mjs",
   "exports": "./index.mjs",
@@ -21,7 +21,7 @@
     "gamedev"
   ],
   "dependencies": {
-    "@metanet-games/passport": "^0.1.0"
+    "@metanet-games/chaintag": "^0.1.0"
   },
   "license": "Apache-2.0"
 }

@@ -1,7 +1,7 @@
 # highscore — spec (v0.1)
 
 Ranked, best-per-player leaderboards with a verifier seam. Reference impl `index.mjs`, proof
-`test.mjs`. Depends on `@metanet-games/passport` (zero-dep) for display names.
+`test.mjs`. Depends on `@metanet-games/chaintag` (zero-dep) for display names.
 
 ## Setup
 
@@ -15,8 +15,8 @@ Ranked, best-per-player leaderboards with a verifier seam. Reference impl `index
 ## Boards & entries
 
 `board(name)` returns a handle for a dynamic board (created on first reference). An **entry** is
-`{ id, board, player: { id, name }, score, meta, ts, verified }`. `player` is a passport identity
-(or any `{ id, name? }`); a missing name is derived via `passport.profile`.
+`{ id, board, player: { id, name }, score, meta, ts, verified }`. `player` is a chaintag identity
+(or any `{ id, name? }`); a missing name is derived via `chaintag.profile`.
 
 - `submit({ player, score, meta? })` — record a score. Only a player's **best** (per `order`) is
   kept; a worse score is ignored. Returns the stored entry (or the existing better one).
@@ -36,7 +36,7 @@ transport/proof-agnostic: it ranks and dedupes; what counts as "proven" is your 
 
 ## Non-goals
 
-Not a server or transport (bring your own backend / relay), not authentication (that's passport),
+Not a server or transport (bring your own backend / relay), not authentication (that's chaintag),
 not the proof system itself (that's replayproof, plugged in via `verify`). It's the ranking +
 best-per-player + trust-gating layer.
 

@@ -1,7 +1,7 @@
 # rooms — spec (v0.1)
 
 Client-side chat with dynamic channels and presence, over any transport. Reference impl
-`index.mjs`, proof `test.mjs`. Depends on `@metanet-games/passport` (zero-dep) for display.
+`index.mjs`, proof `test.mjs`. Depends on `@metanet-games/chaintag` (zero-dep) for display.
 
 ## Envelope
 
@@ -16,7 +16,7 @@ Every message on the wire is one envelope:
 - `v` — format version (1). Unknown versions are ignored.
 - `t` — `chat` (a message), `join`/`leave` (presence transitions), `ping` (presence heartbeat).
 - `ch` — channel name. Any string; channels are created implicitly by being referenced.
-- `from` — the author's resolved identity (id + display name + avatar, via passport).
+- `from` — the author's resolved identity (id + display name + avatar, via chaintag).
 - `ts` — sender clock (ms). Used for ordering and presence TTL; treated as advisory.
 - `mid` — unique message id, used for de-duplication (see below).
 
@@ -47,13 +47,13 @@ it's chat, not consensus.
 
 ## Identity
 
-`identity` is a passport identity (`{ id, … }`) or any `{ id, name?, avatar? }`. If name/avatar
-are absent, rooms derives them via `passport.profile(identity)`, so anonymous players still get a
+`identity` is a chaintag identity (`{ id, … }`) or any `{ id, name?, avatar? }`. If name/avatar
+are absent, rooms derives them via `chaintag.profile(identity)`, so anonymous players still get a
 stable name + identicon. Equality and presence key on `id`.
 
 ## BSV-native extensions (out of scope for v0.1 core, natural to layer)
 
-- **Wallet identity** — pass a wallet-backed passport so authorship is a real key, not a nickname.
+- **Wallet identity** — pass a wallet-backed chaintag so authorship is a real key, not a nickname.
 - **Notarized messages** — anchor a message hash (e.g. via bsv.cx) for a tamper-evident log.
 - **Token/paid channels** — enforce at the transport/relay: a relay that admits only holders of a
   token or payers of a fee. rooms consumes whatever the transport delivers.

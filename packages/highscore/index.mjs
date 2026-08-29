@@ -6,8 +6,8 @@
 // (name one, it exists). The trust seam is `verify`: pass a predicate (e.g. a replayproof check)
 // and highscore will flag — or with `verifiedOnly`, reject — any entry that can't prove itself.
 //
-// Depends only on @metanet-games/passport (for display names), which is itself zero-dep.
-import { profile as deriveProfile } from "@metanet-games/passport";
+// Depends only on @metanet-games/chaintag (for display names), which is itself zero-dep.
+import { profile as deriveProfile } from "@metanet-games/chaintag";
 
 function emitter() {
   const map = new Map();

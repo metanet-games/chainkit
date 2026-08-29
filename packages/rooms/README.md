@@ -1,14 +1,14 @@
 # @metanet-games/rooms
 
 Client-side chat with **dynamic channels** and **presence**, over any transport. Depends only on
-[passport](../passport) for identity.
+[chaintag](../chaintag) for identity.
 
 You bring a transport and a player identity; rooms handles join/leave, who's-here presence,
 message ordering, and de-duplication. Channels are dynamic — name one and it exists.
 
 ```js
 import { createRooms, loopback } from "@metanet-games/rooms";
-import { anon } from "@metanet-games/passport";
+import { anon } from "@metanet-games/chaintag";
 
 // transport is anything with { send(env), subscribe(handler) } — WebSocket, an HTTP relay,
 // WebRTC, or the built-in loopback() for tests/local play.

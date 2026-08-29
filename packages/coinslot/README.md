@@ -9,7 +9,7 @@ wallet.
 
 ```js
 import { createCoinslot } from "@metanet-games/coinslot";
-import { anon } from "@metanet-games/passport";
+import { anon } from "@metanet-games/chaintag";
 
 const slot = createCoinslot({
   identity: anon(localStorage),          // entitlements follow the player

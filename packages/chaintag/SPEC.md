@@ -1,4 +1,4 @@
-# passport — spec (v0.1)
+# chaintag — spec (v0.1)
 
 Portable, wallet-optional player identity for BSV games. Reference impl `index.mjs`, proof
 `test.mjs`. Zero dependencies (node/browser crypto only).
@@ -20,7 +20,7 @@ they share a device or a name — only the id is meaningful.
 ## The account-vs-user rule (non-negotiable)
 
 A wallet connection identifies a **selected account**, not a user, and the first key your app
-receives is **not consent**. passport deliberately does none of the following for you: treating a
+receives is **not consent**. chaintag deliberately does none of the following for you: treating a
 connected key as sign-in, merging an anon identity into a wallet identity, or authorizing an
 action. It hands you the identity and `challenge()`; your app decides what a key is allowed to
 mean and when the player has actually agreed. This mirrors the same rule bsv.cx pay flows follow.
@@ -39,7 +39,7 @@ player, even anonymous, has a stable face with zero setup.
 
 ## Migration (anon → wallet)
 
-`link(from, to)` returns `{ fromId, toId, fromKind, toKind, at }`. passport stores no game data;
+`link(from, to)` returns `{ fromId, toId, fromKind, toKind, at }`. chaintag stores no game data;
 this record is the signal for *your* app to move the anon player's saves/progress onto their
 wallet identity when they connect. One-way by intent: you carry an anon into a wallet, not back.
 
@@ -49,7 +49,7 @@ wallet identity when they connect. One-way by intent: you carry an anon into a w
 identity id, a purpose, and a fresh nonce into a canonical string. Flow:
 
 1. Your app calls `challenge()` and asks the player's wallet to **sign `message`**.
-2. Verify the signature against `p.pubkey`. passport doesn't bundle secp256k1; use `@bsv/sdk`:
+2. Verify the signature against `p.pubkey`. chaintag doesn't bundle secp256k1; use `@bsv/sdk`:
 
 ```js
 import { PublicKey, Signature, BSM } from "@bsv/sdk";

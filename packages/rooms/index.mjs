@@ -2,7 +2,7 @@
 // rooms — client-side chat with DYNAMIC channels + presence, over any transport.
 //
 // You bring a transport (WebSocket, the REORG-style append-only HTTP relay, WebRTC, or the
-// built-in `loopback()` for tests/local) and a player identity (from @metanet-games/passport).
+// built-in `loopback()` for tests/local) and a player identity (from @metanet-games/chaintag).
 // rooms handles the rest: join/leave, who's-here presence, message ordering, and de-duplication.
 //
 // "Dynamic channels" means channels aren't registered anywhere — you just name one and it exists:
@@ -13,8 +13,8 @@
 // envelope to the other peers; `subscribe(handler)` calls `handler(envelope)` for each inbound
 // one. rooms is broadcast-gossip: every client announces itself, so presence needs no server.
 //
-// Depends only on @metanet-games/passport (for display derivation), which is itself zero-dep.
-import { profile as deriveProfile } from "@metanet-games/passport";
+// Depends only on @metanet-games/chaintag (for display derivation), which is itself zero-dep.
+import { profile as deriveProfile } from "@metanet-games/chaintag";
 
 const now0 = () => Date.now();
 let seq = 0;
@@ -55,7 +55,7 @@ export function loopback() {
 
 export function createRooms({ transport, identity, ttl = 30000, now = now0 } = {}) {
   if (!transport || typeof transport.send !== "function") throw new Error("rooms: a transport with send/subscribe is required");
-  if (!identity || !identity.id) throw new Error("rooms: an identity with an id is required (see @metanet-games/passport)");
+  if (!identity || !identity.id) throw new Error("rooms: an identity with an id is required (see @metanet-games/chaintag)");
   const me = display(identity);
   const channels = new Map(); // name -> channel state
 

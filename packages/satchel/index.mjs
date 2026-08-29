@@ -7,7 +7,7 @@
 // ("local" vs "chain") so your UI can show what's truly owned on-chain.
 //
 // satchel doesn't talk to any indexer itself; you provide `chain.list(pubkey)`. Zero dependencies.
-// Pairs with passport (pass a passport identity so the bag follows the player).
+// Pairs with chaintag (pass a chaintag identity so the bag follows the player).
 
 function emitter() {
   const map = new Map();
@@ -20,7 +20,7 @@ function emitter() {
 const memStore = (() => { const m = new Map(); return { getItem: (k) => (m.has(k) ? m.get(k) : null), setItem: (k, v) => m.set(k, String(v)) }; })();
 
 export function createSatchel({ identity, store = memStore, chain = null, now = () => Date.now() } = {}) {
-  if (!identity || !identity.id) throw new Error("satchel: an identity with an id is required (pair with @metanet-games/passport)");
+  if (!identity || !identity.id) throw new Error("satchel: an identity with an id is required (pair with @metanet-games/chaintag)");
   const KEY = "satchel:" + identity.id;
   const ev = emitter();
   let local = { items: {} };

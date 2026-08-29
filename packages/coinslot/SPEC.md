@@ -1,7 +1,7 @@
 # coinslot — spec (v0.1)
 
 A micropayment paywall + tip rail for games. Reference impl `index.mjs`, proof `test.mjs`. Zero
-dependencies. Pairs with `@metanet-games/passport` (entitlements key on `identity.id`).
+dependencies. Pairs with `@metanet-games/chaintag` (entitlements key on `identity.id`).
 
 ## Setup
 
@@ -11,7 +11,7 @@ dependencies. Pairs with `@metanet-games/passport` (entitlements key on `identit
   `{ product, amountSats, amountFiat, currency, description }` and must resolve to
   `{ ok: true, txid?, amountSats? }` on success or `{ ok: false, reason? }` on decline. This is
   where HandCash Connect / Yours / a test stub lives. coinslot never talks to a wallet directly.
-- `identity` — a passport identity (or any `{ id }`). Entitlements + receipts are keyed to it.
+- `identity` — a chaintag identity (or any `{ id }`). Entitlements + receipts are keyed to it.
 - `store` — optional `{ getItem, setItem }` (e.g. `localStorage`) for persistence across sessions.
 - `now` — optional clock, for testing timed passes.
 

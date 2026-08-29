@@ -9,7 +9,7 @@ chain adapter and merges them into the same bag — each tagged with its origin.
 
 ```js
 import { createSatchel } from "@metanet-games/satchel";
-import { anon } from "@metanet-games/passport";
+import { anon } from "@metanet-games/chaintag";
 
 const bag = createSatchel({
   identity: anon(localStorage),

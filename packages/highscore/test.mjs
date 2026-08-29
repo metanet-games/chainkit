@@ -18,7 +18,7 @@ const P = (id) => ({ id });
   ok(top.length === 2 && top[0].player.id === "a" && top[0].score === 300, "top sorted desc, a's best (300) leads");
   ok(top[1].player.id === "b" && top[0].rank === 1 && top[1].rank === 2, "best-per-player + ranks");
   ok(b.rank("b").rank === 2, "rank(player) returns position");
-  ok(/^\S+ \S+$/.test(top[0].player.name), `player name derived via passport (${top[0].player.name})`);
+  ok(/^\S+ \S+$/.test(top[0].player.name), `player name derived via chaintag (${top[0].player.name})`);
 }
 
 // 2. ascending order (speedrun times — lower is better)

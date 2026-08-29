@@ -1,4 +1,4 @@
-// Proof for passport: `node test.mjs`. Exits non-zero on any failure.
+// Proof for chaintag: `node test.mjs`. Exits non-zero on any failure.
 import { anon, fromWallet, profile, shortId, sameAccount, link, challenge } from "./index.mjs";
 
 let fails = 0;

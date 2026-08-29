@@ -1,4 +1,4 @@
-# @metanet-games/passport
+# @metanet-games/chaintag
 
 Portable, wallet-optional player identity for BSV games. Zero dependencies.
 
@@ -8,7 +8,7 @@ before wallet) — and upgradeable to their real wallet key (BRC-100 / HandCash)
 The same wallet identity works across every game: portability a per-game login can't give you.
 
 ```js
-import { anon, fromWallet, profile, link, challenge } from "@metanet-games/passport";
+import { anon, fromWallet, profile, link, challenge } from "@metanet-games/chaintag";
 
 // wallet-less player — stable across sessions, with a name + identicon out of the box
 const me = anon(window.localStorage);
@@ -24,7 +24,7 @@ const c = challenge(account, { purpose: "login" });        // have the wallet si
 ```
 
 **The rule this module is built around:** a wallet connection identifies a selected **account**,
-not a user, and the first key you see is **not consent**. passport gives you the identity and the
+not a user, and the first key you see is **not consent**. chaintag gives you the identity and the
 tools to prove control of it — it never decides for you that a connected key means the player
 agreed to anything. That stays your call.
 
