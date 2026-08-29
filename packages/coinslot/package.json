@@ -1,0 +1,24 @@
+{
+  "name": "@metanet-games/coinslot",
+  "version": "0.1.0",
+  "description": "Drop-in micropayment paywall + tip rail for games — priced products, entitlements (durable / N-uses / timed) and receipts, over a pluggable wallet adapter (HandCash, Yours). Zero deps.",
+  "type": "module",
+  "main": "./index.mjs",
+  "exports": "./index.mjs",
+  "files": [
+    "index.mjs",
+    "SPEC.md"
+  ],
+  "scripts": {
+    "test": "node test.mjs"
+  },
+  "keywords": [
+    "bsv",
+    "micropayment",
+    "paywall",
+    "handcash",
+    "pay-to-play",
+    "gamedev"
+  ],
+  "license": "MIT"
+}
