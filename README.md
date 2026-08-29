@@ -17,6 +17,7 @@ Pick and choose. You don't take the kit; you take the pieces you need.
 | [`@metanet-games/passport`](packages/passport) | Portable, wallet-optional player identity — anonymous by default, upgradeable to a real wallet key, with a deterministic name + identicon. Zero dependencies. | — |
 | [`@metanet-games/rooms`](packages/rooms) | Client-side chat with dynamic channels and presence, over any transport (WebSocket / HTTP relay / WebRTC / built-in loopback). | passport |
 | [`@metanet-games/chainclock`](packages/chainclock) | A block-driven world tick — one shared, verifiable clock nobody controls; derive day/night, seasons and rounds from block height. | — |
+| [`@metanet-games/chainweather`](packages/chainweather) | Deterministic, shared weather from the chain — the same storm for every player, un-riggable, no weather server. | chainseed, chainclock |
 
 ## Design rules
 

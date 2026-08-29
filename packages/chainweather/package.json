@@ -1,0 +1,27 @@
+{
+  "name": "@metanet-games/chainweather",
+  "version": "0.1.0",
+  "description": "Deterministic, shared weather from the chain — the same storm for every player, un-riggable, no weather server. chainseed x chainclock.",
+  "type": "module",
+  "main": "./index.mjs",
+  "exports": "./index.mjs",
+  "files": [
+    "index.mjs",
+    "SPEC.md"
+  ],
+  "scripts": {
+    "test": "node test.mjs"
+  },
+  "keywords": [
+    "bsv",
+    "weather",
+    "deterministic",
+    "procedural",
+    "gamedev"
+  ],
+  "dependencies": {
+    "@metanet-games/chainseed": "^0.1.0",
+    "@metanet-games/chainclock": "^0.1.0"
+  },
+  "license": "MIT"
+}
