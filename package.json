@@ -9,5 +9,9 @@
   "scripts": {
     "test": "node packages/fairdrop/test.mjs && node packages/chaintag/test.mjs && node packages/rooms/test.mjs && node packages/chainclock/test.mjs && node packages/chainweather/test.mjs && node packages/coinslot/test.mjs && node packages/highscore/test.mjs && node packages/satchel/test.mjs"
   },
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/metanet-games/chainkit.git"
+  }
 }
