@@ -1,0 +1,26 @@
+{
+  "name": "@metanet-games/passport",
+  "version": "0.1.0",
+  "description": "Portable, wallet-optional player identity for BSV games — anonymous by default, upgradeable to a real wallet key, with a deterministic name + identicon.",
+  "type": "module",
+  "main": "./index.mjs",
+  "exports": "./index.mjs",
+  "files": [
+    "index.mjs",
+    "SPEC.md"
+  ],
+  "scripts": {
+    "test": "node test.mjs"
+  },
+  "keywords": [
+    "bsv",
+    "bitcoin",
+    "identity",
+    "wallet",
+    "brc100",
+    "handcash",
+    "identicon",
+    "gamedev"
+  ],
+  "license": "MIT"
+}
