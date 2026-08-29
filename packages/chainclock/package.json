@@ -1,0 +1,25 @@
+{
+  "name": "@metanet-games/chainclock",
+  "version": "0.1.0",
+  "description": "A block-driven world tick — one shared, verifiable clock nobody controls. Derive day/night, seasons and rounds from block height. Zero dependencies.",
+  "type": "module",
+  "main": "./index.mjs",
+  "exports": "./index.mjs",
+  "files": [
+    "index.mjs",
+    "SPEC.md"
+  ],
+  "scripts": {
+    "test": "node test.mjs"
+  },
+  "keywords": [
+    "bsv",
+    "bitcoin",
+    "clock",
+    "tick",
+    "deterministic",
+    "day-night",
+    "gamedev"
+  ],
+  "license": "MIT"
+}
