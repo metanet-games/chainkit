@@ -7,7 +7,7 @@
     "packages/*"
   ],
   "scripts": {
-    "test": "node packages/fairdrop/test.mjs && node packages/passport/test.mjs"
+    "test": "node packages/fairdrop/test.mjs && node packages/passport/test.mjs && node packages/rooms/test.mjs"
   },
   "license": "MIT"
 }

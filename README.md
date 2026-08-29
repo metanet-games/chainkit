@@ -15,6 +15,7 @@ Pick and choose. You don't take the kit; you take the pieces you need.
 | [`@metanet-games/chainscape`](packages/chainscape) | Turn placed BSV blocks into a contiguous, deterministic 2-D biome map (procedural terrain that's the same for everyone, with no server). | chainseed |
 | [`@metanet-games/fairdrop`](packages/fairdrop) | Provably-fair loot / dice / crates bound to a *future* block — an outcome nobody can rig and anyone can verify. | chainseed |
 | [`@metanet-games/passport`](packages/passport) | Portable, wallet-optional player identity — anonymous by default, upgradeable to a real wallet key, with a deterministic name + identicon. Zero dependencies. | — |
+| [`@metanet-games/rooms`](packages/rooms) | Client-side chat with dynamic channels and presence, over any transport (WebSocket / HTTP relay / WebRTC / built-in loopback). | passport |
 
 ## Design rules
 
