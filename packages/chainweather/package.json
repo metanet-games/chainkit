@@ -23,5 +23,8 @@
     "@metanet-games/chainseed": "^0.1.0",
     "@metanet-games/chainclock": "^0.1.0"
   },
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "publishConfig": {
+    "access": "public"
+  }
 }
